@@ -83,9 +83,6 @@ h1 {
 .grid-item img {
     animation: myAnimation 5s infinite;
     width: 100%;
-    /*
-    height: auto;
-    */
     display: block;
     transition: transform 0.3s ease;
 }
@@ -116,6 +113,7 @@ h1 {
 
 .common-section{
     font-size: clamp(0.5em, 3vw, 2rem);
+    padding: 10px;
 }
 
 
