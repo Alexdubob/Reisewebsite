@@ -83,7 +83,9 @@ h1 {
 .grid-item img {
     animation: myAnimation 5s infinite;
     width: 100%;
+    /*
     height: auto;
+    */
     display: block;
     transition: transform 0.3s ease;
 }
@@ -104,12 +106,20 @@ h1 {
     flex-direction: column;
     position: absolute;
     font-weight: bold;
-    top: 20px;
-    left: 10px;
-    width: 100%;
+    top: 10px;
+    left: 5px;
+    width: 80%;
     color: white;
     padding: 5px;
+    font-size: clamp(0.5em, 3vw, 2rem);
 }
+
+.common-section{
+    font-size: clamp(0.5em, 3vw, 2rem);
+}
+
+
+
 
 
 @media (max-width: 768px) {
@@ -146,16 +156,16 @@ h1 {
 @keyframes myAnimation {
     0%{
         transform: scale(1);
-        filter: glow(25%);
+        filter: grayscale(25%);
     }
     50%{
         transform: scale(1.2);
-        filter: glow(100%);
+        filter: grayscale(100%);
 
     }
     100%{
         transform: scale(1);
-        filter: glow(25%);
+        filter: grayscale(25%);
 
     }
 
