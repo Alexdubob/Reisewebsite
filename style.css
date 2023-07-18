@@ -86,7 +86,6 @@ h1 {
     height: auto;
     display: block;
     transition: transform 0.3s ease;
-    filter: grayscale(50%);
 }
 
 .grid-item:hover img {
@@ -147,12 +146,17 @@ h1 {
 @keyframes myAnimation {
     0%{
         transform: scale(1);
+        filter: glow(25%);
     }
     50%{
         transform: scale(1.2);
+        filter: glow(100%);
+
     }
     100%{
         transform: scale(1);
+        filter: glow(25%);
+
     }
 
 }
