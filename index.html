@@ -4,56 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Reisewebsite</title>
 </head>
+
 <header class="header">
     <nav class="navigation">
-        <ul>
-            <li><a href="#home">Startseite</a></li>
-            <li><a href="#info">Infos</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
+        <div class="burger-menu">
+            <div class="burger-icon"></div>
+            <ul>
+                <li><a href="#glasboden">GlasbodenBoot</a></li>
+                <li><a href="#Tagesausflug">Tagesausflug</a></li>
+                <li><a href="#Kreuzfahrt">Kreuzfahrt</a></li>
+                <li><a href="#U-Boot">U-Boot</a></li>
+                <li><a href="#Museum">Museum</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
 
+
+<body>
 <div id="home">
     <h1>Faszination Titanic</h1>
 </div>
-
 <section class="grid-container">
+    <div id="glasboden">Beobachten Sie das bunte Leben unterwasser mit unserem Glasbodenboot</div>
     <div class="grid-item">
         <img src="../img/titanicUnterWasser.jpg" alt="Titanic unter Wasser">
         <div class="caption">
             <h2>Titanic unter Wasser</h2>
-            <p>Beobachten Sie das bunte Leben unterwasser mit unserem Glasbodenboot</p>
         </div>
 
+
     </div>
+    <div id="Tagesausflug">Genießen Sie tolle Tagesausflüge auf der Strecke der Titanic</div>
     <div class="grid-item">
         <img src="../img/titanicÜberWasser.jpg" alt="Titanic über Wasser">
         <div class="caption">
             <h2>Titanic Über Wasser</h2>
-            <p>Genießen Sie tolle Tagesausflüge auf der Strecke der Titanic</p>
         </div>
+    </div>
+
+
+    <div id="Kreuzfahrt">Bereisen Sie den Atlantik mit unserem Luxus Kreuzfahrtschiff.
+        <span class="material-symbols-outlined">directions_boat</span>
+    </div>
+    <div class="grid-item">
+        <img src="../img/Kreuzfahrtschiff.jpg" alt="Luxus Kreuzfahrtschiff">
+        <div class="caption">
+            <h2>Luxus Kreuzfahrt </h2>
+        </div>
+    </div>
+
+
+    <div id="U-Boot">Besuchen Sie das originale Titanic Wrack mit unserem selbstgebauten U-Boot.</div>
+    <div class="grid-item">
+        <img src="../img/Titan.jpg" alt="Titan U-boot">
+        <div class="caption">
+            <h2>U-Boot</h2>
+        </div>
+    </div>
+
+
+    <div id="Museum">Besuchen Sie das einzigartige Titanic Film Museum.
+        <span class="material-symbols-outlined">museum</span>
     </div>
     <div class="grid-item">
         <img src="../img/TitanicMovie.jpg" alt="Poster vom Titanic Film">
         <div class="caption">
             <h2>Titanic Film Museum</h2>
-            <p>Besuchen Sie das einzigartige Titanic Film Museum.</p>
-        </div>
-    </div>
-    <div class="grid-item">
-        <img src="../img/Titan.jpg" alt="Titan U-boot">
-        <div class="caption">
-            <h2>Titan U-Boot</h2>
-            <p>Besuchen Sie das originale Titanic Wrack mit unserem selbstgebauten U-Boot.</p>
         </div>
     </div>
 </section>
 
+<script>
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navigationList = document.querySelector('.navigation ul');
 
-<body>
+    burgerMenu.addEventListener('click', () => {
+        burgerMenu.classList.toggle('active');
+        navigationList.classList.toggle('active');
+    });
+</script>
+
 
 </body>
 </html>
